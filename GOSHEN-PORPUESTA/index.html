@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Propuesta de crecimiento · Goshen Performance Parts</title>
+<meta name="description" content="Propuesta de marca, contenido y redes para Goshen Imports. Elija un plan o arme el suyo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0e13;--panel:#101a24;--navy:#14283a;--navy2:#203d52;--steel:#848a97;--line:#243545;--text:#eef1f4;--mute:#aab1bc;--gold:#f2b705;--blue:#4a7fc4;--red:#d62d2d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.55 Inter,system-ui,sans-serif}
+h1,h2,h3,.cond{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em;margin:0;line-height:1.05}
+a{color:var(--gold)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:84px 0;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h2{font-size:clamp(34px,5vw,56px);margin:10px 0 18px}
+.lead{color:var(--mute);max-width:760px;font-size:19px;margin:0}
+nav{position:sticky;top:0;z-index:20;background:rgba(10,14,19,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.logo{font-family:Oswald;font-weight:700;font-size:22px;letter-spacing:.06em}.logo small{display:block;font-size:9px;letter-spacing:.3em;color:var(--steel);font-weight:500;margin-top:-2px}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:14px}nav ul a{color:var(--mute);text-decoration:none}nav ul a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 24px;border-radius:8px;border:0;background:var(--gold);color:#111;font:600 15px Inter;cursor:pointer;text-decoration:none;letter-spacing:.02em}
+.btn:hover{background:#ffd04a;color:#111}.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--steel)}.btn.ghost:hover{border-color:var(--gold);color:var(--gold);background:transparent}
+.hero{padding:110px 0 90px;background:radial-gradient(900px 420px at 80% -10%,var(--navy2),transparent 70%),linear-gradient(180deg,#0d1a26,var(--bg))}
+.hero h1{font-size:clamp(46px,8vw,104px);max-width:980px}.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{margin:24px 0 32px}.stripe{height:4px;width:120px;background:linear-gradient(90deg,var(--gold) 33%,var(--blue) 33% 66%,var(--red) 66%);margin-bottom:28px}
+.grid{display:grid;gap:18px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px}
+.card h3{font-size:24px;margin-bottom:8px}.card p{margin:0;color:var(--mute);font-size:16px}
+.num{font-family:Oswald;font-size:44px;color:var(--gold);line-height:1}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 20px}
+.tab{min-height:44px;padding:0 18px;border-radius:8px;background:var(--panel);border:1px solid var(--line);color:var(--mute);font:500 15px Inter;cursor:pointer}
+.tab[aria-selected=true]{background:var(--navy2);color:#fff;border-color:var(--blue)}
+.plan{display:flex;flex-direction:column;gap:16px;position:relative}
+.plan.pro{border:2px solid var(--gold)}.tag{position:absolute;top:-14px;left:24px;background:var(--gold);color:#111;font:600 12px Inter;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border-radius:6px}
+.price{font-family:Oswald;font-size:72px;line-height:1}.price small{font-size:18px;color:var(--steel);font-family:Inter;margin-left:6px}
+.plan ul{list-style:none;margin:0;padding:16px 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:11px}
+.plan li{display:flex;gap:10px;font-size:16px}.plan li:before{content:"▸";color:var(--gold)}
+.was{color:var(--steel);text-decoration:line-through;font-size:17px}
+.save{display:inline-block;background:#1c3a2a;color:#7be0a4;border-radius:6px;padding:4px 10px;font-weight:600;font-size:14px}
+/* builder */
+.builder{display:grid;grid-template-columns:1.5fr 1fr;gap:24px;align-items:start;margin-top:28px}
+.svc{display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.svc:last-child{border:0}.svc b{font-weight:600}.svc span.d{color:var(--mute);font-size:14px;display:block}
+.svc .p{color:var(--steel);font-size:13px}
+.step{display:flex;align-items:center;gap:6px}.step button{width:44px;height:44px;border-radius:8px;border:1px solid var(--line);background:var(--navy);color:var(--text);font-size:20px;cursor:pointer}
+.step button:hover{border-color:var(--gold)}.step output{min-width:34px;text-align:center;font:600 18px Oswald}
+.grp{font:600 13px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:22px 0 2px}.grp:first-child{margin-top:0}
+.sum{position:sticky;top:76px;display:flex;flex-direction:column;gap:14px}
+.row{display:flex;justify-content:space-between;gap:12px;font-size:16px}.row.big{font-family:Oswald;font-size:30px;text-transform:uppercase}
+.hint{background:var(--navy);border-left:3px solid var(--gold);padding:12px 14px;border-radius:6px;font-size:14.5px;color:var(--text)}
+.meter{height:10px;background:var(--navy);border-radius:6px;overflow:hidden}.meter i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--gold));width:0;transition:width .3s}
+table{width:100%;border-collapse:collapse;font-size:15.5px}th,td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line)}th{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel)}td.c,th.c{text-align:center}.y{color:var(--gold);font-weight:600}.n{color:#5b6572}
+details{border-bottom:1px solid var(--line);padding:18px 0}summary{cursor:pointer;font:600 18px Inter;list-style:none;display:flex;justify-content:space-between;gap:12px}summary::after{content:"+";color:var(--gold);font-size:24px;line-height:1}details[open] summary::after{content:"–"}details p{color:var(--mute);margin:12px 0 0}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:8px}.day{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px;min-height:118px;font-size:13.5px;color:var(--mute)}.day b{display:block;color:var(--text);font:600 12px Inter;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}.day i{font-style:normal;display:inline-block;padding:2px 7px;border-radius:5px;background:var(--navy2);color:#fff;font-size:11px;margin-bottom:6px}.day i.clip{background:var(--gold);color:#111}.day i.car{background:var(--blue)}
+footer{padding:60px 0;text-align:center;color:var(--steel);font-size:14px}
+@media(max-width:900px){.g3,.g4,.g2{grid-template-columns:1fr}.builder{grid-template-columns:1fr}.sum{position:static}nav ul{display:none}.cal{grid-template-columns:repeat(2,1fr)}section{padding:60px 0}.price{font-size:60px}.scroll{overflow-x:auto}table{min-width:560px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><div class="logo">GOSHEN<small>PERFORMANCE PARTS</small></div>
+<ul><li><a href="#valor">Propuesta</a></li><li><a href="#planes">Planes</a></li><li><a href="#armar">Arme su plan</a></li><li><a href="#calendario">Calendario</a></li><li><a href="#ruta">90 días</a></li></ul>
+<a class="btn" href="#armar">Armar mi plan</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="stripe"></div>
+<span class="eyebrow">Propuesta para Arturo Villalobos y Fabricio Campos · Noviembre 2026</span>
+<h1 style="margin-top:14px">Equipamos su marca para <em>ganar</em> dentro y fuera del asfalto</h1>
+<p class="lead">El producto ya lo tienen. Esta propuesta construye lo que falta: una marca que el comprador 4x4 y racing reconozca, recuerde y busque por WhatsApp.</p>
+<a class="btn" href="#planes">Ver los planes</a> &nbsp; <a class="btn ghost" href="#armar">Armar el mío</a>
+</div></header>
+
+<section id="valor"><div class="wrap">
+<span class="eyebrow">01 · Lo que escuchamos</span><h2>Dos socios, una misma meta</h2>
+<p class="lead">Los dos diagnósticos coinciden en lo esencial. Esto es lo que vamos a resolver primero.</p>
+<div class="grid g4" style="margin-top:34px">
+<div class="card"><div class="num">4x4</div><h3>Línea de entrada</h3><p>Es la que mejor se mueve. El primer mes se concentra ahí.</p></div>
+<div class="card"><div class="num">6 m</div><h3>Garantía</h3><p>Su mayor argumento de confianza. Hay que comunicarlo y documentarlo.</p></div>
+<div class="card"><div class="num">B2C+B2B</div><h3>Doble público</h3><p>Entusiastas, talleres y revendedores: tres públicos, un solo mensaje.</p></div>
+<div class="card"><div class="num">+</div><h3>Reconocimiento</h3><p>El reto central: que el mercado sepa quién es Goshen y confíe en la marca.</p></div>
+</div>
+<div class="card" style="margin-top:20px;font-family:Oswald;font-size:clamp(22px,3vw,32px);text-transform:uppercase;line-height:1.2">Productos especializados <span style="color:var(--gold)">+</span> compatibilidad verificada <span style="color:var(--gold)">+</span> atención humana <span style="color:var(--gold)">+</span> garantía documentada</div>
+</div></section>
+
+<section id="planes"><div class="wrap">
+<span class="eyebrow">02 · Inversión del mes 1</span><h2>Dos formas de arrancar</h2>
+<p class="lead">Ambos incluyen el sistema de marca y el primer calendario. La diferencia: quién publica.</p>
+<div class="grid g2" style="margin-top:44px">
+<div class="card plan"><div><span class="eyebrow" style="color:var(--steel)">Plan</span><h3 style="font-size:38px">Arranque</h3></div>
+<p style="color:var(--mute);margin:0">Reciben el sistema y el contenido. Su equipo publica con lo aprendido en la capacitación.</p>
+<div><div class="was" id="wasA"></div><div class="price">$460<small>USD</small></div><span class="save" id="saveA"></span></div>
+<ul><li><b>Guía de libro de marca</b>&nbsp;esencia, tono, paleta y reglas</li><li>Calendario mensual por semana y pilar</li><li>4 clips verticales 9:16</li><li>28 flyers (uno por día)</li><li>2 carruseles</li><li>Capacitación en historias y plataformas, con énfasis en ventas</li></ul>
+<button class="btn ghost" data-pick="a">Cargar en el armador</button></div>
+<div class="card plan pro"><span class="tag">Recomendado</span><div><span class="eyebrow" style="color:var(--steel)">Plan</span><h3 style="font-size:38px">Piloto Automático</h3></div>
+<p style="color:var(--mute);margin:0">Todo lo del Arranque, más redes listas y el mes publicado solo. Ustedes se dedican a vender.</p>
+<div><div class="was" id="wasB"></div><div class="price" style="color:var(--gold)">$730<small>USD</small></div><span class="save" id="saveB"></span></div>
+<ul><li><b>Todo el plan Arranque</b></li><li>Seteo y arreglo de redes: bio, portada, destacados y enlace a WhatsApp</li><li>Cuenta comercial ordenada: Meta Business y WhatsApp Business</li><li>34 publicaciones programadas con copy, hashtags y horario</li><li>Cero carga operativa: solo aprueban y atienden consultas</li></ul>
+<button class="btn" data-pick="b">Cargar en el armador</button></div>
+</div>
+<div class="scroll card" style="margin-top:28px;padding:8px 14px"><table><thead><tr><th>Entregable</th><th>Para qué sirve</th><th class="c">Arranque</th><th class="c">Piloto</th></tr></thead><tbody>
+<tr><td>Guía de libro de marca</td><td>Une la visión de ambos socios en una sola identidad</td><td class="c y">Sí</td><td class="c y">Sí</td></tr>
+<tr><td>Calendario mensual</td><td>Qué se publica, cuándo y con qué objetivo de venta</td><td class="c y">Sí</td><td class="c y">Sí</td></tr>
+<tr><td>4 clips · 28 flyers · 2 carruseles</td><td>Alcance, demostración y confianza todo el mes</td><td class="c y">Sí</td><td class="c y">Sí</td></tr>
+<tr><td>Capacitación en ventas por redes</td><td>Historias que venden y respuesta a mensajes</td><td class="c y">Sí</td><td class="c y">Sí</td></tr>
+<tr><td>Seteo y arreglo de redes</td><td>Perfiles que explican a Goshen en 3 segundos</td><td class="c n">—</td><td class="c y">Sí</td></tr>
+<tr><td>Publicaciones automatizadas</td><td>El mes completo programado, sin tocar nada</td><td class="c n">—</td><td class="c y">Sí</td></tr></tbody></table></div>
+</div></section>
+
+<section id="armar"><div class="wrap">
+<span class="eyebrow">03 · Arme su propio plan</span><h2>Elija solo lo que necesita</h2>
+<p class="lead">Estos son los servicios de JosuFrames con su precio individual. Mueva las cantidades y compare con el precio de los planes.</p>
+<div class="tabs" role="tablist"><button class="tab" data-load="a">Cargar Arranque</button><button class="tab" data-load="b">Cargar Piloto Automático</button><button class="tab" data-load="clear">Empezar en cero</button></div>
+<div class="builder"><div class="card" id="list"></div>
+<aside class="card sum" aria-live="polite">
+<h3 style="font-size:26px">Su resumen</h3>
+<div id="lines" style="font-size:14.5px;color:var(--mute);display:flex;flex-direction:column;gap:5px;min-height:24px"></div>
+<div class="row"><span>Precio por separado</span><b id="tSep">$0</b></div>
+<div class="row"><span>Precio con paquete JosuFrames</span><b id="tPack" style="color:var(--gold)">$0</b></div>
+<div class="meter"><i id="bar"></i></div>
+<div class="row big"><span>Ahorra</span><span id="tSave" style="color:#7be0a4">$0</span></div>
+<div class="hint" id="hint">Agregue servicios para ver su precio.</div>
+<a class="btn" id="cta" href="#" target="_blank" rel="noopener">Enviar mi plan por WhatsApp</a>
+<span style="font-size:12.5px;color:var(--steel)">Precios en USD. Pauta publicitaria no incluida. Valores sujetos a confirmación en reunión.</span>
+</aside></div>
+</div></section>
+
+<section id="calendario"><div class="wrap">
+<span class="eyebrow">04 · Calendario del mes 1</span><h2>34 piezas, una narrativa</h2>
+<p class="lead">Pilares: demostración 35%, educación 25%, cultura 4x4 25% y venta directa 15%. Elija una semana.</p>
+<div class="tabs" id="wk"></div><div class="cal" id="cal"></div>
+<p style="font-size:14px;color:var(--steel);margin-top:14px">Solo se publican productos con existencia, precio, garantía y compatibilidad confirmados por Goshen.</p>
+</div></section>
+
+<section id="ruta"><div class="wrap">
+<span class="eyebrow">05 · Por qué hablamos de 90 días</span><h2>Primero el calendario. Luego, la estrategia completa</h2>
+<div class="card" style="border-color:var(--gold);margin:24px 0;font-size:18px;max-width:900px">La investigación de mercado se planteó a tres meses porque ese es el tiempo que necesitan el estilo de campaña, la táctica y la técnica para mostrar rendimiento real. Esta propuesta cubre el mes 1; los meses 2 y 3 se definen con los datos que deje.</div>
+<div class="tabs" id="mt"></div><div class="card" id="mbox"></div>
+</div></section>
+
+<section><div class="wrap"><span class="eyebrow">06 · Preguntas frecuentes</span><h2>Antes de decidir</h2>
+<details><summary>¿Qué necesitan entregarnos?</summary><p>Catálogo con precios y compatibilidades, acceso a producto para grabar, condiciones escritas de la garantía, logo actual y accesos a redes (Plan Piloto). Una persona que apruebe el calendario.</p></details>
+<details><summary>¿Quién publica en el plan Arranque?</summary><p>Su equipo, con el calendario y las piezas listas. La capacitación enseña a subir historias y a leer las plataformas con enfoque en ventas.</p></details>
+<details><summary>¿Incluye pauta publicitaria?</summary><p>No. La inversión en anuncios se define aparte según presupuesto; el mes 1 deja la línea base para decidir cómo invertir.</p></details>
+<details><summary>¿Cómo se mide el éxito?</summary><p>Consultas calificadas por WhatsApp, tasa de cierre, tiempo de respuesta y guardados de clips y carruseles. El mes 1 fija la línea base.</p></details>
+<details><summary>¿Cuál es el siguiente paso?</summary><p>Una reunión presencial para afinar el alcance, confirmar la forma de pago y fijar fecha de inicio.</p></details>
+</div></section>
+
+<footer><div class="wrap"><div class="cond" style="font-size:22px;color:var(--text)">Josu Frames · 9:16</div>Filmmaker · Editor · Marketer — San Carlos, Costa Rica<br>Propuesta preparada para Goshen Imports. Confidencial.</div></footer>
+
+<script>
+// ====== PRECIOS INDIVIDUALES (USD) — editar aquí ======
+var PRICES={brand:180,cal:90,clip:55,flyer:8,car:25,cap:90,setup:150,auto:120,foto:120,broll:150,web:350,pauta:150,rep:60};
+var PACKS={a:{name:'Plan Arranque',price:460,inc:{brand:1,cal:1,clip:4,flyer:28,car:2,cap:1}},
+ b:{name:'Plan Piloto Automático',price:730,inc:{brand:1,cal:1,clip:4,flyer:28,car:2,cap:1,setup:1,auto:1}}};
+var WA='';// número de WhatsApp con código de país, ej. 50688888888
+var S=[['Marca y estrategia'],
+['brand','Guía de libro de marca','Esencia, tono de voz, paleta, tipografías y reglas de uso','proyecto',1],
+['cal','Calendario mensual de contenido','Pilares, fechas, formatos y objetivo de cada pieza','mes',1],
+['Contenido'],
+['clip','Clip vertical 9:16','Guion, grabación y edición para Reels, TikTok y Shorts','clip',12],
+['flyer','Flyer / publicación diseñada','Diseño con identidad de marca, listo para publicar','flyer',60],
+['car','Carrusel','Educativo o de producto, de 5 a 8 láminas','carrusel',10],
+['broll','Pack de 5 B-rolls / motion graphics','Tomas y gráficos animados para reforzar clips','pack',4],
+['foto','Sesión de fotografía de producto','Fotos comerciales para catálogo y punto de venta','sesión',4],
+['Redes y ventas'],
+['cap','Capacitación en historias y plataformas','Cómo vender por historias, mensajes y métricas','sesión',3],
+['setup','Seteo y arreglo de redes','Bio, portada, destacados, Meta Business y WhatsApp Business','proyecto',1],
+['auto','Publicaciones automatizadas del mes','Programación completa con copy, hashtags y horario','mes',3],
+['pauta','Gestión de pauta publicitaria (honorarios)','Configuración y optimización; la inversión en anuncios va aparte','mes',3],
+['rep','Reporte mensual de métricas','Alcance, consultas y recomendaciones','mes',3],
+['Web'],
+['web','Landing page / catálogo web','Página con catálogo y botón directo a WhatsApp','proyecto',1]];
+var Q={};Object.keys(PRICES).forEach(function(k){Q[k]=0});
+var $=function(i){return document.getElementById(i)},m=function(n){return '$'+Math.round(n).toLocaleString('en-US')};
+function sepOf(inc){return Object.keys(inc).reduce(function(t,k){return t+inc[k]*PRICES[k]},0)}
+$('wasA').textContent='Por separado: '+m(sepOf(PACKS.a.inc));$('saveA').textContent='Ahorra '+m(sepOf(PACKS.a.inc)-460)+' ('+Math.round(100-46000/sepOf(PACKS.a.inc))+'%)';
+$('wasB').textContent='Por separado: '+m(sepOf(PACKS.b.inc));$('saveB').textContent='Ahorra '+m(sepOf(PACKS.b.inc)-730)+' ('+Math.round(100-73000/sepOf(PACKS.b.inc))+'%)';
+var NM={};
+(function(){var h='';S.forEach(function(s){if(s.length==1){h+='<div class="grp">'+s[0]+'</div>';return}
+NM[s[0]]=s[1];h+='<div class="svc"><div><b>'+s[1]+'</b><span class="d">'+s[2]+'</span><span class="p">'+m(PRICES[s[0]])+' por '+s[3]+'</span></div><div class="step"><button aria-label="Quitar '+s[1]+'" data-k="'+s[0]+'" data-d="-1">−</button><output id="q_'+s[0]+'">0</output><button aria-label="Agregar '+s[1]+'" data-k="'+s[0]+'" data-d="1">+</button></div></div>'});
+$('list').innerHTML=h})();
+var MAX={};S.forEach(function(s){if(s.length>1)MAX[s[0]]=s[4]});MAX.flyer=60;
+function covers(p){return Object.keys(p.inc).every(function(k){return Q[k]>=p.inc[k]})}
+function bundle(p){var t=p.price;Object.keys(Q).forEach(function(k){t+=Math.max(0,Q[k]-(p.inc[k]||0))*PRICES[k]});return t}
+function render(){var sep=0,lines=[];Object.keys(Q).forEach(function(k){$('q_'+k).textContent=Q[k];if(Q[k]){sep+=Q[k]*PRICES[k];lines.push('<span style="display:flex;justify-content:space-between"><span>'+Q[k]+' × '+NM[k]+'</span><span>'+m(Q[k]*PRICES[k])+'</span></span>')}});
+$('lines').innerHTML=lines.join('')||'Aún no ha elegido servicios.';
+var best=sep,used=null;['a','b'].forEach(function(id){if(covers(PACKS[id])){var b=bundle(PACKS[id]);if(b<best){best=b;used=id}}});
+$('tSep').textContent=m(sep);$('tPack').textContent=m(best);$('tSave').textContent=m(sep-best);$('bar').style.width=sep?Math.round((sep-best)/sep*100)+'%':'0';
+var hint='Agregue servicios para ver su precio.';
+if(sep){if(used){hint='Precio de paquete activado: <b>'+PACKS[used].name+'</b> ('+m(PACKS[used].price+(best-PACKS[used].price))+' en total'+(best>PACKS[used].price?', incluye extras':'')+').'}
+else{var bestGap=null;['a','b'].forEach(function(id){var gap=0,miss=[];Object.keys(PACKS[id].inc).forEach(function(k){var d=PACKS[id].inc[k]-Q[k];if(d>0){gap+=d*PRICES[k];miss.push(d+' '+NM[k].toLowerCase())}});var cost=bundle(PACKS[id]);if(!bestGap||cost<bestGap.cost)bestGap={id:id,cost:cost,miss:miss}});
+hint='Con '+PACKS[bestGap.id].name+' ('+m(bestGap.cost)+') obtiene todo lo que eligió y además: '+bestGap.miss.join(', ')+'.'}}
+$('hint').innerHTML=hint;
+var msg='Hola Josu, armé mi plan para Goshen:\n'+Object.keys(Q).filter(function(k){return Q[k]}).map(function(k){return '• '+Q[k]+' × '+NM[k]}).join('\n')+'\nTotal estimado: '+m(best)+(used?' ('+PACKS[used].name+')':'')+'\n¿Agendamos reunión?';
+$('cta').href='https://wa.me/'+WA+'?text='+encodeURIComponent(msg)}
+function load(id){Object.keys(Q).forEach(function(k){Q[k]=id==='clear'?0:((PACKS[id].inc[k])||0)});render()}
+document.addEventListener('click',function(e){var t=e.target.closest('[data-k]');if(t){var k=t.dataset.k;Q[k]=Math.max(0,Math.min(MAX[k],Q[k]+(+t.dataset.d)));render();return}
+var l=e.target.closest('[data-load]');if(l){load(l.dataset.load);return}var p=e.target.closest('[data-pick]');if(p){load(p.dataset.pick);$('armar').scrollIntoView()}});
+render();
+// calendario
+var W=[['Presentación y respaldo','Clip: qué es Goshen y por qué existe','Carrusel: la garantía de 6 meses explicada','Flyers: línea 4x4 y canal de consultas'],['Producto en acción','Clip: demostración de recuperación o iluminación','Flyers: productos con stock y precio confirmados','Historias: detrás de cámaras'],['Compra con seguridad','Clip: cómo elegir el accesorio para tu vehículo','Carrusel: errores frecuentes y compatibilidad','Flyers: preguntas reales de clientes'],['Comunidad y venta','Clip: un proyecto o taller aliado','Flyers: combos Recovery, Visibility, Build y Adventure','Llamado final a WhatsApp']];
+var T=['LUN','MAR','MIÉ','JUE','VIE','SÁB','DOM'];var FM=['Flyer','Flyer','Clip','Flyer','Carrusel','Flyer','Flyer'];
+function wk(i){document.querySelectorAll('#wk .tab').forEach(function(b,j){b.setAttribute('aria-selected',j==i)});var w=W[i],h='';
+T.forEach(function(d,j){var f=FM[j];if(f=='Carrusel'&&(i==1||i==3))f='Flyer';var cls=f=='Clip'?'clip':f=='Carrusel'?'car':'';var tx=f=='Clip'?w[1]:f=='Carrusel'?w[2]:j==0?w[3]:'Flyer del día · '+w[0].toLowerCase();h+='<div class="day"><b>'+d+'</b><i class="'+cls+'">'+f+'</i><div>'+tx+'</div></div>'});$('cal').innerHTML=h}
+W.forEach(function(w,i){var b=document.createElement('button');b.className='tab';b.textContent='Semana '+(i+1)+' · '+w[0];b.onclick=function(){wk(i)};$('wk').appendChild(b)});wk(0);
+var M=[['Mes 1 · Fundamentos y lanzamiento','Guía de marca, redes ordenadas, primer calendario, capacitación y línea base de métricas. <b>Esta propuesta.</b>'],['Mes 2 · Validación y adquisición','Ajustar el contenido según consultas reales, probar colaboraciones y acercarse a talleres 4x4 como aliados.'],['Mes 3 · Escalamiento controlado','Duplicar lo que vende, producir casos de clientes y presentar el informe comercial de los 90 días.']];
+function mt(i){document.querySelectorAll('#mt .tab').forEach(function(b,j){b.setAttribute('aria-selected',j==i)});$('mbox').innerHTML='<h3 style="font-size:28px;margin-bottom:10px">'+M[i][0]+'</h3><p style="color:var(--mute);font-size:18px">'+M[i][1]+'</p>'}
+M.forEach(function(x,i){var b=document.createElement('button');b.className='tab';b.textContent='Mes '+(i+1);b.onclick=function(){mt(i)};$('mt').appendChild(b)});mt(0);
+</script>
+</body>
+</html>
